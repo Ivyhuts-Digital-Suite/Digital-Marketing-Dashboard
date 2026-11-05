@@ -1,0 +1,20 @@
+{
+  "name": "@mp/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./server-env": "./src/server-env.ts",
+    "./web-env": "./src/web-env.ts",
+    "./duration": "./src/duration.ts",
+    "./tsconfig.base.json": "./tsconfig.base.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}
